@@ -1,1 +1,36 @@
+print("\nWELLCOME TO PIZZA HUTZ DELIVERIES\n")
 
+# Meminta input ukuran pizza
+print("Please choise your pizza topping: ")
+print("1. frankfurter Rp. 40000")
+print("2. meat monst Rp. 50000")
+print("3. meat monsta Rp. 60000")
+print("4. super supreme Rp. 70000")
+print("5. super supreme chicken Rp. 80000")
+toppingchoise = int(input("Enter the number of pizza toppings you want: "))
+
+# Memeriksa pilihan ukuran
+if toppingchoise == 1:
+    topping = "frankfurter"
+    harga = 40000
+elif toppingchoise == 2:
+    topping = "meat monst"
+    harga = 50000
+elif toppingchoise == 3:
+    topping = "meat monsta"
+    harga = 60000
+elif toppingchoise == 4:
+    topping = "super supreme"
+    harga = 70000
+elif toppingchoise == 5:
+    topping = "super supreme chicken"
+    harga = 80000
+else:
+    print("please try again!")
+
+# Meminta input ukuran pizza
+print("Choise size of pizza: ")
+print("1. personal +Rp. 0")
+print("2. regular +Rp. 5000")
+print("3. large +Rp. 10000")
+pilihukuran = int(input("Enter the pizza size number you want: "))
