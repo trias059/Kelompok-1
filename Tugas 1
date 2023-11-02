@@ -91,9 +91,3 @@ print(f"Crust of the pizza : {crust}")
 print(f"{j}")
 print("\nThank you for choosing pizza hutz deliveries!\n")
 print(f"your final bill is: Rp{total_harga}")
-
-# Tampilan pembayaran pesanan
-print("\nPlease put your money here!\n")
-uang = int(input("Rp."))
-kembalian = uang - total_harga
-print(f"This is your change: Rp{kembalian}")
