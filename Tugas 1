@@ -48,9 +48,9 @@ else:
 # Meminta crust pizza yang di inginkan
 print("Choise crust of pizza:")
 print("1. pan +Rp. 0")
-print("2. StuffedCrust cheese +Rp. 4000")
-print("3. StuffedCrust Sausage +Rp. 5000")
-print("4. Cheesy Bites +Rp. 6000")
+print("2. StuffedCrust cheese +Rp. 9000")
+print("3. StuffedCrust Sausage +Rp. 11000")
+print("4. Cheesy Bites +Rp. 12000")
 crust_choice = int(input("Enter the number of pizza crust you want: "))
 
 # Memeriksa pilihan crust
