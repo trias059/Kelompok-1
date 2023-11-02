@@ -72,3 +72,29 @@ elif crust_choice == 4:
     subtotal3 += 6000
 else:
     print("Please try again!")
+
+#tawaran tambahan extra chesee
+extrachesee = input("Do you want Extrachesee? (YES/NO): ")
+
+total_harga = subtotal3 
+if extrachesee == "Yes":
+    j = "With Extrachesee +Rp. 13000"
+    total_harga += 13000
+else:
+    j = "Without Extrachesee"
+    total_harga = subtotal3
+
+
+print("\nDETAILS OF YOUR PIZZA ORDER\n")
+
+print(f"Your topping       : {topping}")
+print(f"Your pizza size    : {ukuran}")
+print(f"Crust of the pizza : {crust}")
+print(f"{j}")
+print("\nThank you for choosing pizza hutz deliveries!\n")
+print(f"your final bill is: Rp{total_harga}")
+
+print("\nPlease put your money here!\n")
+uang = int(input("Rp."))
+kembalian = uang - total_harga
+print(f"This is your change: Rp{kembalian}")
