@@ -24,7 +24,26 @@ elif toppingchoise == 4:
 else:
     print("please try again!")
 
+# Meminta input ukuran pizza
+print("Choise size of pizza: ")
+print("1. personal +Rp. 0")
+print("2. regular +Rp. 15000")
+print("3. large +Rp. 30000")
+pilihukuran = int(input("Enter the pizza size number you want: "))
 
+# Memeriksa pilihan ukuran
+subtotal2 = harga
+if pilihukuran == 1:
+    ukuran = "personal"
+    subtotal2 += 0
+elif pilihukuran == 2:
+    ukuran = "regular"
+    subtotal2 += 15000
+elif pilihukuran == 3:
+    ukuran = "large"
+    subtotal2 += 30000
+else:
+    print("please try again!")
 
 # Meminta crust pizza yang di inginkan
 print("Choise crust of pizza:")
