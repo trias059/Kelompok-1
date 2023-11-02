@@ -53,6 +53,23 @@ print("3. StuffedCrust Sausage +Rp. 5000")
 print("4. Cheesy Bites +Rp. 6000")
 crust_choice = int(input("Enter the number of pizza crust you want: "))
 
+# Memeriksa pilihan crust
+subtotal3 = subtotal2 
+if crust_choice == 1: 
+    crust = "pan"
+    subtotal3 += 0
+elif crust_choice == 2:
+    crust = "StuffedCrust cheese"
+    subtotal3 += 9000
+elif crust_choice == 3:
+    crust = "StuffedCrust Sausage"
+    subtotal3 += 11000 
+elif crust_choice == 4:
+    crust = "Cheesy Bites"
+    subtotal3 += 12000
+else:
+    print("Please try again!")
+
 #tawaran tambahan extra chesee
 extrachesee = input("Do you want Extrachesee? (Yes/No): ")
 
