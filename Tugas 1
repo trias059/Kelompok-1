@@ -2,37 +2,33 @@ print("\nWELLCOME TO PIZZA HUTZ DELIVERIES\n")
 
 # Meminta input ukuran pizza
 print("Please choise your pizza topping: ")
-print("1. frankfurter Rp. 40000")
-print("2. meat monst Rp. 50000")
-print("3. meat monsta Rp. 60000")
-print("4. super supreme Rp. 70000")
-print("5. super supreme chicken Rp. 80000")
+print("1. frankfurter Rp. 43000")
+print("2. meat monst Rp. 43000")
+print("3. super supreme Rp. 43000")
+print("4. super supreme chicken Rp. 43000")
 toppingchoise = int(input("Enter the number of pizza toppings you want: "))
 
 # Memeriksa pilihan ukuran
 if toppingchoise == 1:
     topping = "frankfurter"
-    harga = 40000
+    harga = 43000
 elif toppingchoise == 2:
     topping = "meat monst"
-    harga = 50000
+    harga = 43000
 elif toppingchoise == 3:
-    topping = "meat monsta"
-    harga = 60000
-elif toppingchoise == 4:
     topping = "super supreme"
-    harga = 70000
-elif toppingchoise == 5:
+    harga = 43000
+elif toppingchoise == 4:
     topping = "super supreme chicken"
-    harga = 80000
+    harga = 43000
 else:
     print("please try again!")
 
 # Meminta input ukuran pizza
 print("Choise size of pizza: ")
 print("1. personal +Rp. 0")
-print("2. regular +Rp. 5000")
-print("3. large +Rp. 10000")
+print("2. regular +Rp. 15000")
+print("3. large +Rp. 30000")
 pilihukuran = int(input("Enter the pizza size number you want: "))
 
 subtotal2 = harga
@@ -41,10 +37,10 @@ if pilihukuran == 1:
     subtotal2 += 0
 elif pilihukuran == 2:
     ukuran = "regular"
-    subtotal2 += 5000
+    subtotal2 += 15000
 elif pilihukuran == 3:
     ukuran = "large"
-    subtotal2 += 10000
+    subtotal2 += 30000
 else:
     print("please try again!")
 
@@ -52,9 +48,9 @@ else:
 
 print("Choise crust of pizza:")
 print("1. pan +Rp. 0")
-print("2. Thin +Rp. 4000")
-print("3. cheese +Rp. 5000")
-print("4. sausage +Rp. 6000")
+print("2. StuffedCrust cheese +Rp. 4000")
+print("3. StuffedCrust Sausage +Rp. 5000")
+print("4. Cheesy Bites +Rp. 6000")
 crust_choice = int(input("Enter the number of pizza crust you want: "))
 
 subtotal3 = subtotal2 
@@ -62,19 +58,19 @@ if crust_choice == 1:
     crust = "pan"
     subtotal3 += 0
 elif crust_choice == 2:
-    crust = "Thin"
-    subtotal3 += 4000
+    crust = "StuffedCrust cheese"
+    subtotal3 += 9000
 elif crust_choice == 3:
-    crust = "Cheese"
-    subtotal3 += 5000 
+    crust = "StuffedCrust Sausage"
+    subtotal3 += 11000 
 elif crust_choice == 4:
-    crust = "Sausage"
-    subtotal3 += 6000
+    crust = "Cheesy Bites"
+    subtotal3 += 12000
 else:
     print("Please try again!")
 
 #tawaran tambahan extra chesee
-extrachesee = input("Do you want Extrachesee? (YES/NO): ")
+extrachesee = input("Do you want Extrachesee? (Yes/No): ")
 
 total_harga = subtotal3 
 if extrachesee == "Yes":
