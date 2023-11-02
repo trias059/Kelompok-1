@@ -1,6 +1,6 @@
 print("\nWELLCOME TO PIZZA HUTZ DELIVERIES\n")
 
-# Meminta input ukuran pizza
+# Meminta input topping pizza
 print("Please choise your pizza topping: ")
 print("1. frankfurter Rp. 43000")
 print("2. meat monst Rp. 43000")
@@ -8,7 +8,7 @@ print("3. super supreme Rp. 43000")
 print("4. super supreme chicken Rp. 43000")
 toppingchoise = int(input("Enter the number of pizza toppings you want: "))
 
-# Memeriksa pilihan ukuran
+# Memeriksa pilihan topping
 if toppingchoise == 1:
     topping = "frankfurter"
     harga = 43000
@@ -31,6 +31,7 @@ print("2. regular +Rp. 15000")
 print("3. large +Rp. 30000")
 pilihukuran = int(input("Enter the pizza size number you want: "))
 
+# Memeriksa pilihan ukuran
 subtotal2 = harga
 if pilihukuran == 1:
     ukuran = "personal"
@@ -44,8 +45,7 @@ elif pilihukuran == 3:
 else:
     print("please try again!")
 
-#meminta crunt pizza yang di inginkan
-
+# Meminta crust pizza yang di inginkan
 print("Choise crust of pizza:")
 print("1. pan +Rp. 0")
 print("2. StuffedCrust cheese +Rp. 4000")
@@ -53,6 +53,7 @@ print("3. StuffedCrust Sausage +Rp. 5000")
 print("4. Cheesy Bites +Rp. 6000")
 crust_choice = int(input("Enter the number of pizza crust you want: "))
 
+# Memeriksa pilihan crust
 subtotal3 = subtotal2 
 if crust_choice == 1: 
     crust = "pan"
@@ -72,6 +73,7 @@ else:
 #tawaran tambahan extra chesee
 extrachesee = input("Do you want Extrachesee? (Yes/No): ")
 
+# Memeriksa penerimaan tawaran Extrascheese
 total_harga = subtotal3 
 if extrachesee == "Yes":
     j = "With Extrachesee +Rp. 13000"
@@ -80,7 +82,7 @@ else:
     j = "Without Extrachesee"
     total_harga = subtotal3
 
-
+# Tampilan rincian pesanan
 print("\nDETAILS OF YOUR PIZZA ORDER\n")
 
 print(f"Your topping       : {topping}")
@@ -90,6 +92,7 @@ print(f"{j}")
 print("\nThank you for choosing pizza hutz deliveries!\n")
 print(f"your final bill is: Rp{total_harga}")
 
+# Tampilan pembayaran pesanan
 print("\nPlease put your money here!\n")
 uang = int(input("Rp."))
 kembalian = uang - total_harga
